@@ -32,13 +32,13 @@ jobs:
         python validation/model_validator.py
     
     - name: Upload trained model
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: trained-model
         path: model_*.pth
     
     - name: Upload validation results
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: validation-results
         path: validation_results.json 
